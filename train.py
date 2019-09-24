@@ -68,7 +68,7 @@ def train(opt):
     model.train()
     if opt.continue_model != '':
         print(f'loading pretrained model from {opt.continue_model}')
-        model.load_state_dict(torch.load(opt.continue_model))
+        model.load_state_dict(torch.load(opt.continue_model,map_location=device ))
     print("Model:")
     print(model)
 
