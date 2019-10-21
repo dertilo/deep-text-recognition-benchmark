@@ -110,9 +110,9 @@ def train(opt):
 
     """ start training """
     start_iter = 0
-    if opt.continue_model != '':
-        start_iter = int(opt.continue_model.split('_')[-1].split('.')[0])
-        print(f'continue to train, start_iter: {start_iter}')
+    # if opt.continue_model != '':
+    #     start_iter = int(opt.continue_model.split('_')[-1].split('.')[0])
+    #     print(f'continue to train, start_iter: {start_iter}')
 
     start_time = time.time()
     best_accuracy = -1
